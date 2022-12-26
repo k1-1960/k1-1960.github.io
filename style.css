@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Nunito+Sans&display=swap');
+@viewport {
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
+.container{
+  padding: 20px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: radial-gradient(at top left, cornflowerblue, indigo);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+p, h1, h2 {
+  color: white;
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  overflow-wrap: break-all;
+  hyphens: auto;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+.profile {
+  display: block;
+  text-align: center;
+  align-items: center;
+}
+
+.pp {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+  width: 45vw;
+  box-shadow: 0px 0px 25px #00000089;
+}
+
+a {
+  text-decoration: none;
+  transition-duration: 500ms;
+  color: lightgoldenrodyellow;
+}
+
+a:hover {
+  transition-duration: 500ms;
+  color: lightyellow;
+}
+
+.footer {
+  align: center;
+  text-align: Center;
+  padding: 40px;
+  backdrop-filter: brightness(0.90);
+  display: block;
+}
+
+.carousel-img {
+  width: 128px;
+}
