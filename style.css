@@ -28,7 +28,6 @@ body {
 body {
   padding: 0;
   margin: 0;
-  //background: radial-gradient(at top left, cornflowerblue, indigo);
   background: radial-gradient(at top left, #424242, black);
   background-repeat: no-repeat;
   background-position: center center;
