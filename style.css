@@ -7,10 +7,29 @@
   padding: 20px;
 }
 
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+  margin-bottom: 40px;
+}
+.footer {
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 40px;
+  color: white;
+}
+
 body {
   padding: 0;
   margin: 0;
-  background: radial-gradient(at top left, cornflowerblue, indigo);
+  //background: radial-gradient(at top left, cornflowerblue, indigo);
+  background: radial-gradient(at top left, #424242, black);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -51,17 +70,71 @@ a {
 
 a:hover {
   transition-duration: 500ms;
-  color: lightyellow;
+  color: lightblue;
 }
 
 .footer {
   align: center;
   text-align: Center;
-  padding: 40px;
-  backdrop-filter: brightness(0.90);
-  display: block;
+  justify-content: center;
+  //padding: 40px;
+  //backdrop-filter: brightness(0.90);
 }
 
 .carousel-img {
   width: 128px;
+}
+
+.sowk {
+  display: flex;
+  background: url('https://images-ext-1.discordapp.net/external/8b86VKIGhiJmM_TM284bLTG07jXKWbOzfcXWNNw8amU/%3Fsize%3D4096/https/cdn.discordapp.com/avatars/1045913933191598130/0420960fed28f7aa5e4cef377e699744.webp');
+  background-position: Center center;
+  background-origin: center;
+  background-size: 100vw;
+  width: 100vw;
+  height: 100vw;
+  background-repeat: no-repeat;
+}
+
+.sowk * {
+  top: 50%;
+  left: 50%;
+}
+
+pre {
+  margin: 10px;
+}
+
+pre.prettyprint { display: block; background-color: #333 }
+pre .nocode { background-color: none; color: #000 }
+pre .str { color: #ffa0a0 } /* string  - pink */
+pre .kwd { color: #f0e68c; font-weight: bold }
+pre .com { color: #87ceeb } /* comment - skyblue */
+pre .typ { color: #98fb98 } /* type    - lightgreen */
+pre .lit { color: #cd5c5c } /* literal - darkred */
+pre .pun { color: #fff }    /* punctuation */
+pre .pln { color: #fff }    /* plaintext */
+pre .tag { color: #f0e68c; font-weight: bold } /* html/xml tag    - lightyellow */
+pre .atn { color: #bdb76b; font-weight: bold } /* attribute name  - khaki */
+pre .atv { color: #ffa0a0 } /* attribute value - pink */
+pre .dec { color: #98fb98 } /* decimal         - lightgreen */
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE } /* IE indents via margin-left */
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
+/* Alternate shading for lines */
+li.L1,li.L3,li.L5,li.L7,li.L9 { }
+
+@media print {
+  pre.prettyprint { background-color: none }
+  pre .str, code .str { color: #060 }
+  pre .kwd, code .kwd { color: #006; font-weight: bold }
+  pre .com, code .com { color: #600; font-style: italic }
+  pre .typ, code .typ { color: #404; font-weight: bold }
+  pre .lit, code .lit { color: #044 }
+  pre .pun, code .pun { color: #440 }
+  pre .pln, code .pln { color: #000 }
+  pre .tag, code .tag { color: #006; font-weight: bold }
+  pre .atn, code .atn { color: #404 }
+  pre .atv, code .atv { color: #060 }
 }
